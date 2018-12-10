@@ -11,7 +11,6 @@ def generate_data(data):
 
         # load and transform into gray scale:
         I = rgb2gray(img.imread('sampleMerry_0011_Lasalle.jpg'))
-        print(np.shape(I))
 
         # extract image patches:
         N = (np.shape(I)[0] * np.shape(I)[1]) / 64 # N = 64?
@@ -27,7 +26,6 @@ def generate_data(data):
 
     # reshape:
     X = np.zeros((int(N), 64))
-    print(N)
     for k in range(0, int(N)):
         X[k, :] = np.reshape(np.squeeze(x[k, :, :]), (1, 64))
     return X
