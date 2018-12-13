@@ -33,8 +33,8 @@ def get_random_pattern(N, lb):
     return np.random.choice((-1., 1.), size=(N, lb))
 
 
-data = get_random_pattern(5, 3)
-np.savetxt('data.txt', data, fmt="%5.1f")
+# data = get_random_pattern(10, 10)
+# np.savetxt('data.txt', data, fmt="%5.1f")
 
 
 # plt.figure()
@@ -56,7 +56,18 @@ def get_b(N):
     return np.random.choice((-1., 1.), size=N)
 
 
-# weight = get_w(5)
-# bias = get_b(5)
+# weight = get_w(10)
+# bias = get_b(10)
 # np.savetxt('w.txt', weight, fmt="%5.1f")
 # np.savetxt('b.txt', bias, fmt="%5.1f")
+
+def get_bint(patterns):
+    bint = np.loadtxt('bint.txt')
+    return bint[:, :patterns]
+
+
+# bint = get_bint(20)
+# np.savetxt('bint_small.txt', bint, fmt="%5.1f")
+
+
+

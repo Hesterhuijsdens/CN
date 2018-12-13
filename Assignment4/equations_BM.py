@@ -1,15 +1,18 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from itertools import *
 
 
-def sigmoid(A):
-    return 1 / (1 + np.exp(-A))
+# def sigmoid(A):
+#     return 1 / (1 + np.exp(-A))
 
 
-def flip_prob(w, x, b):
-    """ probability """
-    return sigmoid(np.dot(w, x) + b)
+# def flip_prob(w, x, b):
+#     """ probability """
+#     return sigmoid(np.dot(w, x) + b)
+
+
+def flip_prob(w, x, b, j):
+    return np.exp(2 * (np.dot(w, x) + b) * x[j])
 
 
 def E(x, w, b):
@@ -19,14 +22,14 @@ def E(x, w, b):
     for i in range(n):
         for j in range(n):
             if i is not j:
-                E +=0.5 * w[i, j] * x[i] * x[j] + b[i] * x[i]
+                E += 0.5 * w[i, j] * x[i] * x[j] + b[i] * x[i]
     return E
 
 
 def z(X, w, b):
     n, p = X.shape
 
-    # all possible neuronal states: 2^N = 2^4 = 16
+    # all possible states
     states = list(product([-1, 1], repeat=n))
 
     Z = 0
@@ -42,7 +45,7 @@ def state_prob(X, w, b, pi):
     return 1./Z * (np.exp(-E(X[:, pi], w, b)))
 
 
-def gibbs_sampling(w, b, n_gibbs, n_burnin):
+def gibbs_sampling(w, b, n_gibbs=500, n_burnin=10):
     """ approximate model distribution for training a BM """
     # 10 nodes
     n_nodes = w.shape[0]
@@ -52,6 +55,11 @@ def gibbs_sampling(w, b, n_gibbs, n_burnin):
 
     # state vector initialisation (t=0)
     X[:, 0] = np.random.randint(2, size=n_nodes)
+    for i in range(n_nodes):
+        if X[i, 0] >= 0.5:
+            X[i, 0] = 1.0
+        else:
+            X[i, 0] = -1.0
 
     # loop over Gibbs samples
     for i in range(1, n_gibbs):
@@ -60,13 +68,13 @@ def gibbs_sampling(w, b, n_gibbs, n_burnin):
         for j in range(n_nodes):
 
             # compute flip probability
-            p = flip_prob(w[:, j], X[:, i-1], b[j])
+            p = flip_prob(w[:, j], X[:, i-1], b[j], j)
 
             # determine new binary state
-            if (np.random.rand() < p).astype("float"):
-                X[j, i] = 1.
+            if (np.random.rand() < 1./p).astype("float"):
+                X[j, i] = -X[j, i-1]
             else:
-                X[j, i] = -1.
+                X[j, i] = X[j, i-1]
 
     # discard burn-in (depend on state initialisation)
     return X[:, n_burnin:]
@@ -94,11 +102,12 @@ def log_likelihood(X, w, b):
     return np.mean(np.sum(np.log(ps), axis=1))
 
 
-def boltzmann_train(patterns, eta=0.01, n_epochs=30, n_gibbs=500, n_burnin=10):
+def boltzmann_train(patterns, eta, n_epochs=2000, n_gibbs=500, n_burnin=10):
     n_nodes, n_examples = patterns.shape
 
     # weights initialisation
     w = np.loadtxt('w.txt')
+    w_list = np.zeros((n_epochs, n_nodes, n_nodes))
 
     # bias initialisation
     b = np.zeros(n_nodes)
@@ -106,7 +115,7 @@ def boltzmann_train(patterns, eta=0.01, n_epochs=30, n_gibbs=500, n_burnin=10):
 
     # E(patterns[:, 2], w, b)
     # state_prob(patterns, w, b, 2)
-    log_likelihood(patterns, w, b)
+    print log_likelihood(patterns, w, b)
 
     # expectations under empirical distribution (training patterns)
     dE_dw, dE_db = compute_expectations(patterns)
@@ -115,7 +124,6 @@ def boltzmann_train(patterns, eta=0.01, n_epochs=30, n_gibbs=500, n_burnin=10):
 
     # loop over epochs
     for i_epoch in range(n_epochs):
-        # print("Epoch {}/{}.".format(1 + i_epoch, n_epochs))
 
         # Gibbs sampling with current model: free stats
         XM = gibbs_sampling(w, b, n_gibbs, n_burnin)
@@ -126,15 +134,15 @@ def boltzmann_train(patterns, eta=0.01, n_epochs=30, n_gibbs=500, n_burnin=10):
         # update weights and biases
         w += (eta * (dEM_dw - dE_dw))
         b += (eta * (dEM_db - dE_db))
+        w_list[i_epoch, :, :] = w
 
         # E should go down, prob should go up
         # print E(patterns[:, 0], w, b), state_prob(patterns, w, b, 0)
 
     # force symmetry
     w = (w + w.T) / 2
-
-    log_likelihood(patterns, w, b)
-    return w, b
+    print log_likelihood(patterns, w, b)
+    return w, b, w_list
 
 
 # Boltzmann dreaming
