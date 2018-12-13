@@ -3,37 +3,32 @@ import matplotlib.image as img
 import matplotlib.pyplot as plt
 from generatePatches import *
 
-patches = generate_data("natural")
+# load data and standardize:
+x = generate_data("natural")
+m = np.mean(x, axis=0)
+x = x - np.ones((np.shape(x)[0], 1)) * m
 
-# visualise patches:
-fig = plt.figure(0)
-for plot_nr in range(1, 65):
-    ax = fig.add_subplot(8, 8, plot_nr)
-    ax.imshow(np.reshape(patches[plot_nr-1, :], (8, 8)), cmap=plt.get_cmap(name='gray'))
+# eigenvalue decomposition:
+eigenvalues, eigvectors = np.linalg.eig(np.cov(np.transpose(x)))
+eigvectors = np.transpose(eigvectors)
+
+# visualize PCA components:
+fig = plt.figure(1)
+for component in range(1, 65):
+    ax = fig.add_subplot(8, 8, component)
+    ax.imshow(np.reshape(eigvectors[component-1, :], (8, 8)), cmap=plt.get_cmap(name='gray'))
     plt.axis('off')
+#plt.show()
 
-m = np.mean(patches, axis=0)
-patches = patches - np.ones((np.shape(patches)[0], 1)) * m
+# reconstruct image patches:
+Z = np.matmul(x, eigvectors)
+reconstruction = np.matmul(Z, np.transpose(eigvectors)) + m
 
-w = np.random.normal(size=(64, 64))
-max_iteration = 100
-learning_rate = 0.1
+# use the method from Olshausen et al. (1996) to optimize sparsity:
+decay = 0.1 # lambda
+a = np.random.rand(np.shape(x)[0], np.shape(x)[1])  # coefficients to train
 
-#for epoch in range(max_iteration):
-
-
-
-
-
-# visualize PCAs:
-#fig = plt.figure(1)
-# for plot_nr in range(1, 65):
-#     ax = fig.add_subplot(8, 8, plot_nr)
-#     ax.imshow(patches[plot_nr-1, :, :], cmap=plt.get_cmap(name='gray'))
-#     plt.axis('off')
-
-
-plt.show()
-
-
-
+for epoch in range(20):
+    a = [for i in range(np.shape())]
+    a = np.trapz(np.dot(eigvectors, x[epoch, :]))
+    print(a)
