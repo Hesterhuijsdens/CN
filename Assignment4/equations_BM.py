@@ -2,15 +2,6 @@ import numpy as np
 from itertools import *
 
 
-# def sigmoid(A):
-#     return 1 / (1 + np.exp(-A))
-
-
-# def flip_prob(w, x, b):
-#     """ probability """
-#     return sigmoid(np.dot(w, x) + b)
-
-
 def flip_prob(w, x, b, j):
     return np.exp(2 * (np.dot(w, x) + b) * x[j])
 
@@ -111,7 +102,6 @@ def boltzmann_train(patterns, eta, n_epochs=2000, n_gibbs=500, n_burnin=10):
 
     # bias initialisation
     b = np.zeros(n_nodes)
-    # b = np.loadtxt('b.txt')
 
     # E(patterns[:, 2], w, b)
     # state_prob(patterns, w, b, 2)
