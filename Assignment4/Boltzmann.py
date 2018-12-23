@@ -8,7 +8,7 @@ np.seterr(all="ignore")
 
 
 # for now, 3 patterns on a network of 5 neurons!
-patterns = np.loadtxt('data.txt')
+patterns = get_random_pattern(100, 10)
 n = 200
 w, b, weightlist = boltzmann_train(patterns, eta=0.001, n_epochs=n)
 

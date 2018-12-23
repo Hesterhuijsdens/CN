@@ -3,7 +3,7 @@ from equations_BM import *
 from binary_data import *
 
 
-# shape: (160L, 283041L) (spike train altijd langer dan #neuronen)
+# shape: (160L,  283041L) (spike train altijd langer dan #neuronen)
 bint = np.loadtxt('bint_small.txt')
 print np.shape(bint)
 

@@ -1,5 +1,5 @@
-import numpy as np
 from itertools import *
+from binary_data import *
 
 
 def flip_prob(w, x, b, j):
@@ -97,7 +97,7 @@ def boltzmann_train(patterns, eta, n_epochs=2000, n_gibbs=500, n_burnin=10):
     n_nodes, n_examples = patterns.shape
 
     # weights initialisation
-    w = np.loadtxt('w.txt')
+    w = get_w(10)
     w_list = np.zeros((n_epochs, n_nodes, n_nodes))
 
     # bias initialisation
