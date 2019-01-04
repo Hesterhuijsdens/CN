@@ -4,24 +4,31 @@ from PreprocessData import load37
 from Equations import *
 import time
 
+# avoid overflow warnings
+np.seterr(all="ignore")
+
 # load train and test data:
-x, t = load37(version="train")
-#x = x[:300]
-#t = t[:300]
+x_training, t_training = load37(version="train")
 x_test, t_test = load37(version="test")
-#x_test = x_test[:100]
-#t_test = t_test[:100]
+
+lb = 80
+ub = 100
+x = x_training[:lb]
+t = t_training[:lb]
+x_val = x_training[lb+1:ub]
+t_val = t_training[lb+1:ub]
 
 # store dimensions of data:
 N = np.shape(x)[0]
 d = np.shape(x)[1]
 
 # set parameters:
-decay = 0.01
-epochs = 20 # 5000
+decay = 0.1
+epochs = 1000 # 5000
 eta = 0.1
-alpha = 0.1
+alpha = 0.9
 nr_of_batches = 100
+batch_size = 0.01 * ub
 
 # initialize loss arrays
 train_loss, train_loss_m, val_loss, val_loss_m, train_loss_wd, val_loss_wd, train_loss_wdm, val_loss_wdm = \

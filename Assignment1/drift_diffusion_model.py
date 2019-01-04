@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from equations_drift_diffusion import *
 
 # initialize model parameters:
 dt = 0.001          # time step
