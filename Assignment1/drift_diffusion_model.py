@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from equations_drift_diffusion import *
 
 # use random seed:
 np.random.seed(5)
@@ -55,8 +54,6 @@ for t in np.linspace(dt, T, int(T/dt) - 1):
     estimated_rho[counter + 1] = np.exp(-np.power(t - dt * mean_FPT, 2)/(2 * np.power(dt * std_FPT, 2))) / np.sqrt(2 * np.pi * np.power(std_FPT * dt, 2))
     counter += 1
 
-print np.shape(estimated_rho)
-print np.shape(rho)
 
 plt.figure(1)
 plt.plot(range(int(T/dt)), rho, label='FPT distribution')
