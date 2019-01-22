@@ -13,13 +13,11 @@ n = 200              # nr of samples/trajectories
 
 # ML estimates for mu and sigma:
 def ml_mu(n, fpts, dt):
-    fpts = fpts * dt
-    return (1.0 / (np.sum(fpts) / n))
+    return 1.0 / (np.sum(fpts*dt) / n)
 
 
 def ml_sigma(n, fpts, dt):
-    fpts = fpts * dt
-    return (1.0 / n) * np.sum(1.0 / fpts) - ml_mu(n, fpts, dt)
+    return (1.0 / n) * np.sum(1.0 / fpts*dt) - ml_mu(n, fpts, dt)
 
 
 mus = [0.01, 0.1, 0.5, 1.0, 1.5]
