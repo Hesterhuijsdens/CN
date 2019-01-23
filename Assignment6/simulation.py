@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 np.random.seed(5)
 
@@ -24,12 +25,26 @@ def create_actions():
     return actions_x, actions_y
 
 
-# check if new location falls within maze and perform bounce-off:
-def check_boundaries(x, y, dx, dy):
-    if np.linalg.norm([x + dx, y + dy], ord=2) > 1.0:
-        return False
-    else:
-        return True
+# perform bounce-off and return new locations:
+def bounce_off(x, y, dx, dy):
+    angle = np.arctan2(y + dy, x + dx)
+    angle_step = np.arctan2(dy, dx)
+
+    # compute new angle:
+    angle_new = 2.0 * angle - np.pi - angle_step
+    dx_new = np.cos(angle_new)
+    dy_new = np.sin(angle_new)
+
+    # compute bounce-off locations:
+    x_new = np.cos(angle) + 0.03 * dx_new * np.linalg.norm([x + dx, y + dy], ord=2)
+    y_new = np.sin(angle) + 0.03 * dy_new * np.linalg.norm([x + dx, y + dy], ord=2)
+    return x_new, y_new
+
+
+# function that determines if the escape platform is (not) reached:
+def goal_not_reached(x, y, goalx, goaly):
+    distance = math.sqrt(np.power(x - goalx, 2)) + math.sqrt(np.power(y - goaly, 2))
+    return distance >= 0.05
 
 
 # create a water maze and plot:
@@ -40,7 +55,7 @@ plt.plot(goal_x, goal_y, c='black', fillstyle='none', marker='o')
 
 # initialize parameters:
 dt = 0.1
-T = 30.0
+T = 3000.0
 
 # initial location:
 x = [x_coords[100]]
@@ -48,18 +63,24 @@ y = [y_coords[100]]
 actionsx, actionsy = create_actions()
 
 for t in range(int(T / dt)):
-    direction = np.random.randint(0, 8)
-    dx = actionsx[direction] * 0.03
-    dy = actionsy[direction] * 0.03
-    if check_boundaries(x[-1], y[-1], dx, dy):
-        x.append(x[-1] + dx)
-        y.append(y[-1] + dy)
-    print x[-1]
-    print y[-1]
+    if goal_not_reached(x[-1], y[-1], goal_x, goal_y):
+        direction = np.random.randint(0, 8)
+        dx = actionsx[direction] * 0.03
+        dy = actionsy[direction] * 0.03
+
+        # check for boundaries:
+        if np.linalg.norm([x[-1] + dx, y[-1] + dy], ord=2) > 1.0:
+            # bounce off:
+            xnew, ynew = bounce_off(x[-1], y[-1], dx, dy)
+            x.append(xnew)
+            y.append(ynew)
+        else:
+            x.append(x[-1] + dx)
+            y.append(y[-1] + dy)
+
+    else: # goal reached
+        print "goal reached!"
+        break
 
 plt.plot(x, y)
-
-
-
-
 plt.show()
