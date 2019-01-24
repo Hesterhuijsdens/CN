@@ -14,11 +14,11 @@ plt.plot(goal_x, goal_y, c='black', fillstyle='none', marker='o')
 
 # initialize parameters:
 dt = 0.1
-T = 300.0
+T = 120.0
 
 # initial location and direction:
-x = [x_coords[100]]
-y = [y_coords[100]]
+x = [x_coords[int(209/np.random.randint(1, 4))]]
+y = [y_coords[int(209/np.random.randint(1, 4))]]
 actionsx, actionsy = create_actions()
 direction = np.random.randint(0, 8)
 
