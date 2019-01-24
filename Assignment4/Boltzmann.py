@@ -2,37 +2,37 @@ import numpy as np
 from binary_data import *
 from equations_BM import *
 
-
 # avoid overflow warnings
 np.seterr(all="ignore")
 
 
-# for now, 3 patterns on a network of 5 neurons!
-patterns = get_random_pattern(100, 10)
+# create data
+patterns = get_random_pattern(10, 10)
+# plt.figure()
+# plt.imshow(patterns)
+
 n = 200
-w, b, weightlist = boltzmann_train(patterns, eta=0.001, n_epochs=n)
+w, b, weightlist, wsum, bsum = boltzmann_train(patterns, eta=0.03, n_epochs=n)
 
 # test BM
-X_sample = boltzmann_dream(w, b)
-plt.figure()
-plt.imshow(X_sample)
+# X_sample = boltzmann_dream(w, b)
+# plt.figure()
+# plt.imshow(X_sample)
 
 plt.figure()
 for i in range(0, w.shape[0]):
     for j in range(0, w.shape[0]):
         plt.plot(range(0, n), weightlist[:, i, j], label=(i, j))
+plt.xlabel('iterations')
+plt.ylabel('change in weights')
+plt.title('Convergence of change in weights')
 
 plt.figure()
-plt.plot(range(0, n), weightlist[:, 3, 4])
-plt.legend()
+plt.plot(range(0, n), (wsum))
+plt.xlabel('iterations')
+plt.ylabel('change in sum of weights')
+plt.title('Convergence of change in summed weights')
 plt.show()
-
-
-# TO DO:
-# plot change in weights vs iteration
-# mean field theory and linear regression correction
-# load in MNIST data
-# build classifier (2.5.1)
 
 
 

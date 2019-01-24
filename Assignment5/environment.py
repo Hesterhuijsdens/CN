@@ -7,8 +7,7 @@ class KArmedBandit(object):
     # certainty agent
     def __init__(self, k):
         self.n_action = k
-        self.p = [0.8, 0.2]
-        # self.pick_bandit = None
+        self.p = [0.5, 0.5]
 
     # execute action 0 / 1
     def play(self, action):
@@ -16,6 +15,7 @@ class KArmedBandit(object):
         if random.random() < self.p[action]:
             return 1
         else:
-            return -1
+            return 0
+
 
 

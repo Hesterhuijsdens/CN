@@ -9,6 +9,8 @@ class Player(object):
         self.pulls = [0] * k
         self.reward = [0] * k
         self.reward_list = []
+        self.cumreward = [0] * k
+        self.cumreward_list = [[0], [0]]
         self.bandit_list = []
         prior = (a / (a+b))**(a-1) * (1 - (a / (a+b)))**(b-1)
         self.rho = [prior, prior]
@@ -35,6 +37,9 @@ class Player(object):
     def learn(self, bandit, reward):
         self.reward[bandit] += reward
         self.reward_list.append(reward)
+        self.cumreward[bandit] += reward
+        for machine in range(0, 2):
+            self.cumreward_list[machine].append(self.cumreward[machine])
         self.bandit_list.append(bandit)
         self.rho[bandit] = (self.reward[bandit] + 1.0) / (self.pulls[bandit] + 2.0)
 
