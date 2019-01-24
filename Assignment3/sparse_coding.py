@@ -23,12 +23,13 @@ for component in range(1, 65):
 # reconstruct image patches:
 Z = np.matmul(x, eigvectors)
 reconstruction = np.matmul(Z, np.transpose(eigvectors)) + m
+print "reconstruct: ", np.shape(reconstruction)
 
 # use the method from Olshausen et al. (1996) to optimize sparsity:
 decay = 0.1 # lambda
 a = np.random.rand(np.shape(x)[0], np.shape(x)[1])  # coefficients to train
 
-for epoch in range(20):
-    a = [for i in range(np.shape())]
-    a = np.trapz(np.dot(eigvectors, x[epoch, :]))
-    print(a)
+# for epoch in range(20):
+#     a = [for i in range(np.shape())]
+#     a = np.trapz(np.dot(eigvectors, x[epoch, :]))
+#     print(a)
