@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3227ef2d-d1b1-46ce-a3bd-8d0c98210ad3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Boltzmann.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Boltzmann.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/binary_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/binary_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/equations_BM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/equations_BM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/salamander.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/salamander.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/two_armed_bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/two_armed_bandit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment1/generate_results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/StochasticGD2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment3/equations_sparse_coding2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment3/sparse_coding2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment6/actorcritic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment6/actorcritic_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment6/create_figure3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment6/simulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment6/simulation_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/drift_diffusion_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/drift_diffusion_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Equations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/GradientDescent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/GradientDescent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/StochasticGradientDescent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/StochasticGradientDescent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/sparse_coding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/sparse_coding.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +56,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment4/salamander.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="320">
+              <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment1/drift_diffusion_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment2/Equations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="130" column="13" lean-forward="true" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment2/StochasticGD2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -150,12 +190,27 @@
             <path>
               <item name="CN" type="b2602c69:ProjectViewProjectNode" />
               <item name="CN" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CN" type="462c0819:PsiDirectoryNode" />
               <item name="Assignment4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CN" type="b2602c69:ProjectViewProjectNode" />
               <item name="CN" type="462c0819:PsiDirectoryNode" />
               <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CN" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,16 +383,15 @@
       <workItem from="1546843581072" duration="8803000" />
       <workItem from="1547017317207" duration="1349000" />
       <workItem from="1547220918545" duration="991000" />
-      <workItem from="1548269591942" duration="34667000" />
+      <workItem from="1548269591942" duration="34698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50762000" />
+    <option name="totallyTimeSpent" value="50793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1098081" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -473,16 +527,6 @@
     <entry file="file://$PROJECT_DIR$/Assignment4/bint.txt">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment2/Equations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="130" column="42" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../scripts/SML/assign1.2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -605,8 +649,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment4/salamander.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="320">
+          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment1/drift_diffusion_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/Equations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="130" column="13" lean-forward="true" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/StochasticGD2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
