@@ -19,10 +19,19 @@ def place_cells(p, N=493, sigma=0.16):
         s[n-1, 1] = r * np.sin(theta)
 
     # place cell activity is Gaussian shaped:
-    f = [np.exp(-(np.linalg.norm([p, s[i, :]], ord=2)/(2.0 * np.power(sigma, 2.0)))) for i in range(N)]
-    return f
+    p = np.transpose(p)
+    if np.shape(p)[0] == 2:
+        f = [np.exp(-(np.linalg.norm([p, s[i, :]], ord=2) / (2.0 * np.power(sigma, 2.0)))) for i in range(N)]
+    else:
+        f = np.exp((-1.0 * np.sqrt(np.sum(np.power(p - s, 2), axis=1))) / (2 * np.power(sigma, 2.0)))
+    return f, s
 
 
 # the critic of location p:
 def critic(w, f_p):
-    return np.dot(w, f_p)
+    return np.matmul(w, f_p)
+
+
+# the action of location p:
+def actor(z, f_p):
+    return np.matmul(z, np.reshape(f_p, (493, 1)))
