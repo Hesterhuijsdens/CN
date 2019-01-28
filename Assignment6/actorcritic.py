@@ -1,3 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+from simulation_functions import create_watermaze, create_actions, bounce_off, goal_not_reached
+from create_figure3 import figure3, plot_Cp
+from actorcritic_functions import place_cells, critic, actor, delta
+np.random.seed(40)
+
+
 # create a water maze and plot:
 x_coords, y_coords, goal_x, goal_y = create_watermaze()
 plt.figure(0)
