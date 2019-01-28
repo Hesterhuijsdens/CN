@@ -35,3 +35,11 @@ def critic(w, f_p):
 # the action of location p:
 def actor(z, f_p):
     return np.matmul(z, np.reshape(f_p, (493, 1)))
+
+
+# computes the prediction error:
+def delta(c_current, c_new, discount, r):
+    if r: # if arrived at the escape platform:
+        return 1.0 + discount * c_new - c_current
+    else: # current reward is zero:
+        return discount * c_new - c_current
