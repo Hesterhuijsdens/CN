@@ -6,14 +6,22 @@ import matplotlib.pyplot as plt
 # function to generate the data:
 def generate_data(data):
     if data == "pixels":
-        print("pixels")
+        n1 = 8 # image size is n1 * n1
+        N = 1500 # number of images
+        n = n1**2
+        x = np.zeros((N, n1, n1))
+        y = np.random.rand(N, n)
+        x = -np.log(y)
+        x = np.reshape(x, (N, n1, n1))
+        x = x / np.max(x)
+
     elif data == "natural":
 
         # load and transform into gray scale:
         I = rgb2gray(img.imread('sampleMerry_0011_Lasalle.jpg'))
 
         # extract image patches:
-        N = (np.shape(I)[0] * np.shape(I)[1]) / 64 # N = 64?
+        N = (np.shape(I)[0] * np.shape(I)[1]) / 64
         x = np.zeros((int(N), 8, 8))
         patch_nr = 0
         for i in range(1, int((np.shape(I)[0] / 8) + 1)):

@@ -2,16 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# computes mean squared error between images and reconstructions:
-def preserve_information(I, a, phi):
-    return 0
+# to compute b:
+def b_i(phi, I):
+    return np.dot(phi, I)
 
 
-# computes sparseness of coefficients a:
-def sparsity_penalty(decay, a):
-    return 0
+# to compute C:
+def C_ij(phi, all_phi):
+    return np.matmul(phi, all_phi)
 
 
-# cost function to be minimized:
-def cost_function(I, a, phi, decay):
-    return -1.0 * preserve_information(I, a, phi) - sparsity_penalty(decay, a)
+# S(x) = log(1 + x^2):
+def derivative_S(a, sigma):
+    x = a / sigma
+    return (2.0 * x) / (1.0 + np.power(x, 2))
