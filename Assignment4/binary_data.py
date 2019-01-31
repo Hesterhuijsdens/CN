@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-# np.random.seed(4)
+np.random.seed(4)
 
 
 # generate matrix with random patterns

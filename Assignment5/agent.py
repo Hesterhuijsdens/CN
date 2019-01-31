@@ -1,4 +1,5 @@
 import numpy as np
+np.random.seed(0)
 
 
 # create agent
@@ -14,6 +15,7 @@ class Player(object):
         self.bandit_list = []
         prior = (a / (a+b))**(a-1) * (1 - (a / (a+b)))**(b-1)
         self.rho = [prior, prior]
+        self.rho_list = [[prior], [prior]]
         self.beta = beta
 
     def pick_slot_machine(self):
@@ -38,9 +40,11 @@ class Player(object):
         self.reward[bandit] += reward
         self.reward_list.append(reward)
         self.cumreward[bandit] += reward
-        for machine in range(0, 2):
-            self.cumreward_list[machine].append(self.cumreward[machine])
         self.bandit_list.append(bandit)
         self.rho[bandit] = (self.reward[bandit] + 1.0) / (self.pulls[bandit] + 2.0)
+        for machine in range(0, 2):
+            self.cumreward_list[machine].append(self.cumreward[machine])
+            self.rho_list[machine].append(self.rho[machine])
+
 
 

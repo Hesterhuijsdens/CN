@@ -14,11 +14,6 @@ patterns = get_random_pattern(10, 10)
 n = 200
 w, b, weightlist, wsum, bsum = boltzmann_train(patterns, eta=0.03, n_epochs=n)
 
-# test BM
-# X_sample = boltzmann_dream(w, b)
-# plt.figure()
-# plt.imshow(X_sample)
-
 plt.figure()
 for i in range(0, w.shape[0]):
     for j in range(0, w.shape[0]):
@@ -28,7 +23,7 @@ plt.ylabel('change in weights')
 plt.title('Convergence of change in weights')
 
 plt.figure()
-plt.plot(range(0, n), (wsum))
+plt.plot(range(0, n), wsum)
 plt.xlabel('iterations')
 plt.ylabel('change in sum of weights')
 plt.title('Convergence of change in summed weights')

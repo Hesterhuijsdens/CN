@@ -1,9 +1,6 @@
 from binary_data import *
 from itertools import *
 
-# def flip_prob(w, x, b, j):
-#     return np.exp(2 * (np.dot(w, x) + b) * x[j])
-
 
 def E(x, w, b):
     return 0.5 * (np.dot(np.dot(w, x), x) + np.dot(b, x))
@@ -27,7 +24,6 @@ def state_prob(X, w, b, Z):
 def flip_prob(w, x, b, j):
     part1 = 0.5 * np.dot(w, x) + b[j]
     part2 = part1 * x[j]
-    # p = np.exp(part2)
     return 1. / (1. + np.exp(part2))
 
 
@@ -44,10 +40,6 @@ def gibbs_sampling(w, b, n_gibbs=500, n_burnin=10):
     for i in range(1, n_gibbs):
         for j in range(n_nodes):
             p = flip_prob(w[:, j], X[:, i-1], b, j)
-
-            # if i % 100 == 0:
-            #     print i, " 1/p: ", p
-
             if (np.random.rand() < p).astype("float"):
                 X[j, i] = -X[j, i-1]
             else:
@@ -75,7 +67,6 @@ def log_likelihood(X, w, b, Z):
 
 def boltzmann_train(patterns, eta, n_epochs=200, n_gibbs=500, n_burnin=10):
     n_nodes, n_examples = np.shape(patterns)
-
     w = get_w(n_nodes)
     w_list = np.zeros((n_epochs, n_nodes, n_nodes))
     w_sum = np.zeros(n_epochs)

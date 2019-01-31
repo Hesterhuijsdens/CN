@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3227ef2d-d1b1-46ce-a3bd-8d0c98210ad3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment1/generate_results.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/StochasticGD2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment3/equations_sparse_coding2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment3/sparse_coding2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment6/actorcritic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment6/actorcritic_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment6/create_figure3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment6/simulation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment6/simulation_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/drift_diffusion_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/drift_diffusion_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/GD_M.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/GD_MWD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/GD_reg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/GradientDescent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/GradientDescent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/StochasticGradientDescent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/StochasticGradientDescent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/sparse_coding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/sparse_coding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/Boltzmann.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Boltzmann.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/binary_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/binary_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/equations_BM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/equations_BM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/outfile.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/outfile.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/salamander.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/salamander.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/salamander.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/salamander.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/two_armed_bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/two_armed_bandit.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,93 +25,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CN$two_armed_bandit.coverage" NAME="two_armed_bandit Coverage Results" MODIFIED="1548345073512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment5" />
+    <SUITE FILE_PATH="coverage/CN$two_armed_bandit.coverage" NAME="two_armed_bandit Coverage Results" MODIFIED="1548593379311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment5" />
     <SUITE FILE_PATH="coverage/CN$sparse_coding.coverage" NAME="sparse_coding Coverage Results" MODIFIED="1543262015433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment3" />
     <SUITE FILE_PATH="coverage/CN$test.coverage" NAME="test Coverage Results" MODIFIED="1543259103629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment3" />
     <SUITE FILE_PATH="coverage/CN$Boltzmann.coverage" NAME="Boltzmann Coverage Results" MODIFIED="1546843192653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment4" />
-    <SUITE FILE_PATH="coverage/CN$salamander.coverage" NAME="salamander Coverage Results" MODIFIED="1548341242897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment4" />
+    <SUITE FILE_PATH="coverage/CN$salamander.coverage" NAME="salamander Coverage Results" MODIFIED="1548593838005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment4" />
     <SUITE FILE_PATH="coverage/CN$GradientDescent.coverage" NAME="GradientDescent Coverage Results" MODIFIED="1546365734735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment2" />
     <SUITE FILE_PATH="coverage/CN$sal_exp.coverage" NAME="sal_exp Coverage Results" MODIFIED="1548338057620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment4" />
+    <SUITE FILE_PATH="coverage/CN$mlp_2class.coverage" NAME="mlp_2class Coverage Results" MODIFIED="1548496696774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../ML/MachineLearning/Assignment2" />
     <SUITE FILE_PATH="coverage/CN$StochasticGradientDescent.coverage" NAME="StochasticGradientDescent Coverage Results" MODIFIED="1545464726071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment2" />
     <SUITE FILE_PATH="coverage/CN$practAssign5II.coverage" NAME="practAssign5II Coverage Results" MODIFIED="1545161879273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../Python Scripts/Ex5" />
     <SUITE FILE_PATH="coverage/CN$PractAssign5III.coverage" NAME="PractAssign5III Coverage Results" MODIFIED="1545162454260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../Python Scripts/Ex5" />
+    <SUITE FILE_PATH="coverage/CN$GD_M.coverage" NAME="GD_M Coverage Results" MODIFIED="1548942423344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment2" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CN" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment5/environment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment5/two_armed_bandit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment4/salamander.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment1/drift_diffusion_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment2/Equations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="130" column="13" lean-forward="true" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignment2/StochasticGD2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment5/agent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -146,16 +77,18 @@
         <option value="$PROJECT_DIR$/Assignment4/bint_small.txt" />
         <option value="$PROJECT_DIR$/Assignment2/StochasticGradientDescent.py" />
         <option value="$PROJECT_DIR$/Assignment2/GradientDescent.py" />
-        <option value="$PROJECT_DIR$/Assignment4/equations_BM.py" />
-        <option value="$PROJECT_DIR$/Assignment4/Boltzmann.py" />
         <option value="$PROJECT_DIR$/../../SML/final/ex2.py" />
-        <option value="$PROJECT_DIR$/Assignment4/binary_data.py" />
         <option value="$PROJECT_DIR$/Assignment4/sal_exp.py" />
-        <option value="$PROJECT_DIR$/Assignment4/salamander.py" />
         <option value="$PROJECT_DIR$/Assignment4/salamander.ipynb" />
+        <option value="$PROJECT_DIR$/Assignment4/binary_data.py" />
         <option value="$PROJECT_DIR$/Assignment5/agent.py" />
         <option value="$PROJECT_DIR$/Assignment5/two_armed_bandit.py" />
         <option value="$PROJECT_DIR$/Assignment5/environment.py" />
+        <option value="$PROJECT_DIR$/Assignment4/Boltzmann.py" />
+        <option value="$PROJECT_DIR$/Assignment4/equations_BM.py" />
+        <option value="$PROJECT_DIR$/Assignment4/salamander.py" />
+        <option value="$PROJECT_DIR$/Assignment2/Equations.py" />
+        <option value="$PROJECT_DIR$/Assignment2/GD_M.py" />
       </list>
     </option>
   </component>
@@ -177,41 +110,6 @@
               <item name="CN" type="b2602c69:ProjectViewProjectNode" />
               <item name="CN" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CN" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CN" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CN" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CN" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CN" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CN" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CN" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -221,11 +119,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ML/MachineLearning" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tmdad\Documents\MSc year 2\CN\CN\Assignment2" />
       <recent name="C:\Users\tmdad\Documents\MSc year 2\CN\CN\Assignment4" />
       <recent name="C:\Users\tmdad\Documents\MSc year 2\CN\CN" />
       <recent name="C:\Users\tmdad\Documents\MSc year 2\CN\CN\Assignment3" />
@@ -243,8 +142,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.two_armed_bandit">
-    <configuration name="Boltzmann" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.GD_M">
+    <configuration name="GD_M" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,12 +151,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment4/Boltzmann.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment2/GD_M.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,20 +165,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mlp_2class" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\tmdad\Anaconda2\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../SML/final" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../ML/MachineLearning/Assignment2" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../SML/final/ex2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../ML/MachineLearning/Assignment2/mlp_2class.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -314,6 +213,9 @@
       <module name="CN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment4" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -352,19 +254,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Boltzmann" />
       <item itemvalue="Python.salamander" />
       <item itemvalue="Python.two_armed_bandit" />
-      <item itemvalue="Python.ex2" />
       <item itemvalue="Python.sal_exp" />
+      <item itemvalue="Python.mlp_2class" />
+      <item itemvalue="Python.GD_M" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.two_armed_bandit" />
+        <item itemvalue="Python.GD_M" />
         <item itemvalue="Python.salamander" />
+        <item itemvalue="Python.two_armed_bandit" />
+        <item itemvalue="Python.mlp_2class" />
         <item itemvalue="Python.sal_exp" />
-        <item itemvalue="Python.ex2" />
-        <item itemvalue="Python.Boltzmann" />
       </list>
     </recent_temporary>
   </component>
@@ -383,41 +285,48 @@
       <workItem from="1546843581072" duration="8803000" />
       <workItem from="1547017317207" duration="1349000" />
       <workItem from="1547220918545" duration="991000" />
-      <workItem from="1548269591942" duration="34698000" />
+      <workItem from="1548269591942" duration="36056000" />
+      <workItem from="1548360468170" duration="1132000" />
+      <workItem from="1548366038010" duration="6992000" />
+      <workItem from="1548409422149" duration="1906000" />
+      <workItem from="1548445739419" duration="24455000" />
+      <workItem from="1548520111725" duration="3382000" />
+      <workItem from="1548598587913" duration="1884000" />
+      <workItem from="1548941439877" duration="3901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50793000" />
+    <option name="totallyTimeSpent" value="95803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1098081" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119936034" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32394367" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39967105" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20260021" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Salesforce" order="7" />
       <window_info anchor="bottom" id="Debug Logs" order="8" />
       <window_info anchor="bottom" id="Execute Anonymous" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32934782" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32827735" />
-      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Favorites" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.32827735" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" auto_hide="true" id="SciView" order="5" show_stripe_button="false" type="FLOATING" />
+      <window_info anchor="right" id="SciView" order="5" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="6" side_tool="true" weight="0.32942432" />
     </layout>
     <layout-to-restore>
@@ -450,20 +359,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assignment3/test.py" />
-    <entry file="file://$PROJECT_DIR$/Assignment3/generatePatches.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment3/sparse_coding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PreprocessData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -552,36 +447,6 @@
         <state relative-caret-position="-2223" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment4/Boltzmann.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment4/equations_BM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment4/binary_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment4/sal_exp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -589,13 +454,6 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment4/salamander.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
         </state>
       </provider>
     </entry>
@@ -616,47 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment2/GradientDescent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="87" column="27" lean-forward="true" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/two_armed_bandit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment4/salamander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment1/drift_diffusion_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -666,17 +483,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment2/Equations.py">
+    <entry file="file://$PROJECT_DIR$/Assignment2/StochasticGD2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="130" column="13" lean-forward="true" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+        <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment2/StochasticGD2.py">
+    <entry file="file://$PROJECT_DIR$/../../ML/MachineLearning/Assignment2/mlp_2class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/two_armed_bandit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/equations_BM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/binary_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/salamander.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/Equations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="148" column="15" lean-forward="true" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/GradientDescent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment2/GD_M.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/Boltzmann.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/salamander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment3/sparse_coding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment3/sparse_coding2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment3/generatePatches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment3/equations_sparse_coding2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment3/equations_sparse_coding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
