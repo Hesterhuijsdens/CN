@@ -28,9 +28,7 @@ def plot_Cp(w, x_coords, y_coords, fig):
     C = np.reshape(C, (493, 493), order='C')
 
     # plot resulting C:
-    #fig = plt.figure(1)
     ax = fig.add_subplot(111, projection='3d')
-    #ax.plot_wireframe(x_mesh, y_mesh, C, rstride=1, cstride=1)
     ax.plot_surface(x_mesh, y_mesh, C, cmap=cm.viridis, rcount=493, ccount=493)
     ax.set_zlim(0.0, 1.0)
     plt.show()
